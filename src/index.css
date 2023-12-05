@@ -1,0 +1,25 @@
+div {
+  //border: 0.01rem solid red;
+}
+
+.heroContainer {
+  background-image: url('./assets/img/abstract-building-bg.jpg');
+}
+
+.graph {
+  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.253));
+}
+
+.graph-filters {
+  clip-path: polygon(0% 0%, 0 100%, 100% 100%, 100% 0%);
+  border-radius: 50%;
+}
+
+.addedValueheroContainer {
+  background-image: url('./assets/img/white-diagonal-cliped-bg.png');
+  filter: drop-shadow(0px -20px 10px rgba(128, 128, 128, 0.1));
+}
+
+.aboutUsContainer{
+  background-image: url('./assets/img/blue-abstract-bg.jpg');
+}
