@@ -2,11 +2,12 @@
 import { ReactNode } from 'react'
 type Props = {
   children: ReactNode
+  className?: string
 }
 
-export default function ContentContainer({children}: Props) {
+export default function ContentContainer({children, className}: Props) {
   return (
-    <div className="max-w-screen-xl px-5 2xl:mx-15 md:px-15">
+    <div className={`${className} max-w-screen-lg px-5 2xl:mx-15 md:px-15`}>
       {children}
     </div>
   );

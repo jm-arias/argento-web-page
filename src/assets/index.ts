@@ -3,6 +3,7 @@ import ArgentoCoin from './img/argento-coin.png'
 import ArgentoLogo from './img/argento-logo.svg'
 import BlueAbstracBg from './img/blue-abstract-bg.jpg'
 import LogoWhite from './img/logo-white.svg'
+import SilverChunk from './img/silver-chunk.png'
 
 export const images = {
     ArgentoLogo,
@@ -10,4 +11,5 @@ export const images = {
     AddedValueGraph,
     ArgentoCoin,
     BlueAbstracBg,
+    SilverChunk
 }

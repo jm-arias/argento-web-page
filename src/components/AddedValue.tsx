@@ -6,9 +6,9 @@ import Heading from "./ui/Heading";
 
 export default function AddedValueComponent() {
   return (
-      <div className="addedValueheroContainer mt-[-15%] grid place-content-center bg-right-top pb-25 pt-30 2xl:mt-[-10%] lg:pt-50 sm:pt-40">
+      <div className="addedValueheroContainer bg-cover mt-[-15%] grid place-content-center bg-right-top pb-25 pt-30 2xl:mt-[-10%] lg:pt-50 sm:pt-40">
         <ContentContainer>
-          <div className="grid grid-cols-1 gap-10">
+          <div className="grid gap-10">
             <div className="flex items-center justify-center gap-10">
               <img
                 src={images.ArgentoCoin}
