@@ -1,3 +1,3 @@
 export * from './breakPointsLimits';
-export * from './anchorMenu';
+export * from './generals';
 export * from './siteContent';

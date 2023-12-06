@@ -12,4 +12,6 @@ export const anchorMenu: anchor = {
   },
 } as const;
 
-export type anchorMenuEnumKeys = keyof typeof anchorMenu;
+export type Products = 'bancaseguros' | 'finanzas' | 'subAgentes'
+
+export type AnchorMenuEnumKeys = keyof typeof anchorMenu;

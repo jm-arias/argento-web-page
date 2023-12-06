@@ -26,7 +26,7 @@ export default function AddedValueComponent() {
             <hr className="h-px w-full border-0 bg-gray-300 md:inline hidden" />
             <div className="grid gap-5 lg:grid-cols-2 md:px-5">
               {siteContent.addedValue.content.map((_) => (
-                <AddedValueItem icon={_.icon} text={_.text} />
+                <AddedValueItem icon={_.icon} text={_.text} key={_.text}/>
               ))}
             </div>
           </div>

@@ -1,4 +1,4 @@
-import { anchorMenu } from "../const/anchorMenu";
+import { anchorMenu } from "../const/generals";
 import {images} from '../assets/index';
 
 export default function HeaderNav() {
@@ -10,8 +10,8 @@ export default function HeaderNav() {
           className="h-7 lg:h-9 sm:h-8 xl:h-10"
         />
         <div className="hidden gap-5 sm:flex md:gap-10">
-          {Object.values(anchorMenu).map((x) => (
-            <span className="text-sm text-blue-primary">{x.text}</span>
+          {Object.values(anchorMenu).map((_) => (
+            <span className="text-sm text-blue-primary" key={_.text}>{_.text}</span>
           ))}
         </div>
       </div>

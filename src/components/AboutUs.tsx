@@ -16,7 +16,7 @@ export default function AboutUs() {
             <div className="font-300 hidden lg:flex">{siteContent.aboutUs.contentP2}</div>
           </div>
         </div>
-        <img src={images.SilverChunk} className="w-280 absolute z-0 -bottom-(100) -left-160 lg:-left-150" />
+        <img src={images.SilverChunk} className="w-280 absolute z-0 -bottom-110 -left-160 lg:-left-170" />
       </ContentContainer>
     </div>
   );
