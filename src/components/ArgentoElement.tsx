@@ -1,8 +1,8 @@
-import { images } from "../assets/index";
+import { images } from "assets/index";
 
 export default function ArgentoElement() {
   return (
-    <div className="pa-5 border-(solid white 6) rounded-2xl text-white aspect-square w-75 h-75 grid content-between bg-[rgba(10,43,74,0.6)] drop-shadow-lg backdrop-blur-lg">
+    <div className="pa-5 border-(solid white 6) rounded-2xl text-white aspect-square w-75 h-75 grid content-between bg-[rgba(10,43,74,0.6)] shadow-lg backdrop-blur-lg">
       <div className="flex justify-between items-between leading-1 ">
         <div>
           <div className="text-2xl font-800">13</div>

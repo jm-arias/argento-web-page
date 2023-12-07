@@ -1,8 +1,8 @@
-import { images } from "../assets";
-import siteContent from "../const/siteContent";
-import ArgentoElement from "./ArgentoElement";
-import ContentContainer from "./frames/ContentContainer";
-import Heading from "./ui/Heading";
+import { images } from "assets";
+import siteContent from "const/siteContent";
+import ArgentoElement from "components/ArgentoElement";
+import ContentContainer from "components/frames/ContentContainer";
+import Heading from "components/ui/Heading";
 
 export default function AboutUs() {
   return (

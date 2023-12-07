@@ -1,4 +1,4 @@
-import { Products } from "../const";
+import { Products } from "const";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 
@@ -16,11 +16,11 @@ export default function ProductFeatureItem({ title, content, icon }: Props) {
         {icon && (
           <FontAwesomeIcon
             icon={icon}
-            className="text-(2xl blue-primary) aspect-square p-3 border-(1 solid) rounded-md"
+            className="text-(2xl blue-primary) aspect-square p-3 bg-white rounded-md drop-shadow-md"
           />
         )}
         <div>
-          <div className="font-700 text-blue-primary">{title}</div>
+          <div className="font-700 text-(blue-primary lg)">{title}</div>
           <div className="font-400 text-sm">{content}</div>
         </div>
       </div>

@@ -33,7 +33,7 @@ const siteContent = {
       },
       {
         icon: faUserGear,
-        text: 'Incrementamos la consistencia de las decisiones en un ambiente de alto volume de transacción.',
+        text: 'Incrementamos la consistencia de las decisiones en un ambiente de alto volumen transaccional.',
       },
       {
         icon: faGaugeHigh,
@@ -43,7 +43,7 @@ const siteContent = {
   },
   aboutUs: {
     title: '¿QUIÉNES SOMOS?',
-    contentP1: 'Somos una empresa de alto perfil tecnologico e innovador, formada por un grupo de profesionales de alta especializacion. Nuestra motivación es brindar apoyo a nuestros clientes ayudandolos a mejorar su gestion. Para aumentar la eficiencia de sus procesos e incrementando sus beneficios. Nuestro trabajo se caracteriza por el servicio personalizado y la garantia del trabajo realizado.',
+    contentP1: 'Somos una empresa de alto perfil tecnológico e innovador, formada por un grupo de profesionales de alta especializacion. Nuestra motivación es brindar apoyo a nuestros clientes ayudandolos a mejorar su gestion. Para aumentar la eficiencia de sus procesos e incrementando sus beneficios. Nuestro trabajo se caracteriza por el servicio personalizado y la garantia del trabajo realizado.',
     contentP2: 'Buscamos cumplir siempre con las expectativas de nuestros clientes en cada proyecto, por lo que proporcionamos un servicio con un alto sentido de responsabilidad y compromiso.'
   },
   products: {

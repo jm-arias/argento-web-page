@@ -1,5 +1,5 @@
-import { anchorMenu } from "../const/generals";
-import {images} from '../assets/index';
+import { anchorMenu } from "const/generals";
+import {images} from 'assets/index';
 
 export default function HeaderNav() {
   return (

@@ -1,7 +1,7 @@
-import siteContent from "../const/siteContent";
-import ContentContainer from "./frames/ContentContainer";
-import { images } from "../assets/index";
-import Heading from "./ui/Heading";
+import siteContent from "const/siteContent";
+import ContentContainer from "components/frames/ContentContainer";
+import { images } from "assets/index";
+import Heading from "components/ui/Heading";
 
 
 export default function HeaderNav() {
