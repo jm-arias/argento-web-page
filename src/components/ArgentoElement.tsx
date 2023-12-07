@@ -2,7 +2,7 @@ import { images } from "assets/index";
 
 export default function ArgentoElement() {
   return (
-    <div className="pa-5 border-(solid white 6) rounded-2xl text-white aspect-square w-75 h-75 grid content-between bg-[rgba(10,43,74,0.6)] shadow-lg backdrop-blur-lg">
+    <div className="pa-5 border-(solid white 6) rounded-2xl text-white aspect-square w-60 h-60 md:w-75 md:h-75 grid content-between bg-[rgba(10,43,74,0.6)] shadow-lg backdrop-blur-lg">
       <div className="flex justify-between items-between leading-1 ">
         <div>
           <div className="text-2xl font-800">13</div>
@@ -15,7 +15,7 @@ export default function ArgentoElement() {
       </div>
       <div>
         <div className="text-center">
-          <img src={images.LogoWhite} className="w-[70%]" />
+          <img src={images.LogoWhite} className="w-[75%]" />
         </div>
         <hr className="my-4 w-full" />
         <div className="text-center text-xs">

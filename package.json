@@ -10,21 +10,23 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.8",
-    "@fortawesome/fontawesome-free-solid": "^5.0.13",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/node": "^20.10.4",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
     "@unocss/preset-icons": "^0.58.0",
     "@unocss/preset-web-fonts": "^0.58.0",
+    "@unocss/runtime": "^0.58.0",
     "@unocss/transformer-variant-group": "^0.58.0",
     "@vitejs/plugin-react": "^4.2.0",
     "eslint": "^8.53.0",

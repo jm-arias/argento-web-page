@@ -12,6 +12,19 @@ export const anchorMenu: anchor = {
   },
 } as const;
 
-export type Products = 'bancaseguros' | 'finanzas' | 'subAgentes'
-
 export type AnchorMenuEnumKeys = keyof typeof anchorMenu;
+
+
+export type Products = "bancaseguros" | "subagentes" | "puntos-de-pago"
+
+export type identityColor = 
+| 'blue-primary'
+| 'blue-secondary'
+| 'blue-accent'
+| 'orange-primary'
+| 'orange-secondary'
+| 'orange-accent'
+| 'purple-primary'
+| 'purple-secondary'
+| 'purple-accent'
+
