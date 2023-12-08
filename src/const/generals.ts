@@ -1,14 +1,14 @@
-type anchor = {
-  [key: string]: { text: string };
-};
-
-export const anchorMenu: anchor = {
-  aboutUs: { text: "¿Quiénes somos?" },
+export const anchorMenu = {
+  aboutUs: { 
+    text: "¿Quiénes somos?",
+    anchor: "aboutUs" },
   products: {
     text: "Productos",
+    anchor: "productInfo"
   },
   contact: {
     text: "Contácto",
+    anchor: "contact"
   },
 } as const;
 

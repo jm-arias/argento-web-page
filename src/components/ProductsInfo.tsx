@@ -4,7 +4,7 @@ import siteContent from "const/siteContent";
 import ProductFeatureItem from "components/ProductFeatureItem";
 import ContentContainer from "components/frames/ContentContainer";
 import Heading from "components/ui/Heading";
-import { Products, identityColor } from "const/generals";
+import { Products, anchorMenu, identityColor } from "const/generals";
 
 export default function ProductsInfo() {
   const [product, setProduct] = useState<Products>("bancaseguros");
@@ -26,7 +26,10 @@ export default function ProductsInfo() {
       : "saturate-0";
 
   return (
-    <div className="py-25 bg-cover grid place-content-center overflow-hidden bg-gradient-to-t from-gray-200 to-white relative">
+    <div
+      id={anchorMenu.products.anchor}
+      className="py-25 bg-cover grid place-content-center overflow-hidden bg-gradient-to-t from-gray-200 to-white relative"
+    >
       <ContentContainer className="relative z-1">
         <div className="grid gap-12 lg:gap-15 ">
           <div className="grid gap-5 text-center">

@@ -6,7 +6,7 @@ import Heading from "components/ui/Heading";
 
 export default function AddedValue() {
   return (
-    <div className="addedValueheroContainer bg-cover -mt-[15%] grid place-content-center bg-right-top pb-25 pt-30 2xl:-mt-[10%] lg:pt-50 sm:pt-40">
+    <div className="addedValueheroContainer bg-cover grid place-content-center bg-right-top pb-25 pt-30 lg:pt-50 sm:pt-40">
       <ContentContainer>
         <div className="grid gap-10">
           <div className="flex items-center justify-center gap-10">
@@ -19,7 +19,8 @@ export default function AddedValue() {
                 {siteContent.addedValue.title}
               </Heading>
               <div className="text-md py-2">
-                {siteContent.addedValue.content}
+                <span>{siteContent.addedValue.contentP1}</span>
+                <span className="hidden md:inline">{siteContent.addedValue.contentP2}</span>
               </div>
             </div>
           </div>
@@ -29,6 +30,7 @@ export default function AddedValue() {
               <AddedValueItem icon={_.icon} text={_.text} key={_.text} />
             ))}
           </div>
+          <hr className="h-px w-full border-0 bg-gray-300 md:inline hidden" />
         </div>
       </ContentContainer>
     </div>

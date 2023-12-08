@@ -1,5 +1,5 @@
 
-import { 
+import {
   faArrowsRotate,
   faBuildingLock,
   faCalculator,
@@ -9,20 +9,24 @@ import {
   faClockRotateLeft,
   faComputer,
   faDollar,
+  faEnvelope,
   faGaugeHigh,
   faHands,
   faKey,
   faLayerGroup,
+  faLocationDot,
+  faPhone,
   faPieChart,
   faSliders,
   faUsersGear,
-  IconDefinition 
+  IconDefinition,
 } from '@fortawesome/free-solid-svg-icons'
 import { images } from 'assets';
 import { Products } from 'const';
 
-type textContent = Partial<Record<'content' | `contentP${number}`  , string>>
+type textContent = Partial<Record<'content' | `contentP${number}`, string>>
 type imgUrl = `url("${string}")`
+
 type siteContent = {
   hero: {
     title: string,
@@ -50,10 +54,19 @@ type siteContent = {
     footer?: {
       products: string[]
     } & textContent,
-  } & textContent>
-  ourClients:{
+  } & textContent>,
+  contact: {
     title: string,
-    items: imgUrl[]
+    adress: { icon: IconDefinition, place: string, location: string },
+    phone: { icon: IconDefinition, number: `(${number}) ${number}-${number}` },
+    email: { icon: IconDefinition, text: `${string}@${string}` },
+  }
+  promise: {
+    title: string;
+    titleTag: string[]
+  } & textContent,
+  footer: {
+    copyRight: string
   }
 };
 
@@ -66,9 +79,10 @@ const siteContent: siteContent = {
   },
   addedValue: {
     title: 'UNA PROPUESTA DIGITAL ROBUSTA',
-    content:
-      'Especialmente diseñada para la comercialización de seguros y préstamos, en instituciones financieras y canales alternos de distribución masiva o especializada.',
-    items: [
+    contentP1:
+      'Especialmente diseñada para la comercialización de seguros y préstamos',
+    contentP2: ', en instituciones financieras y canales alternos de distribución masiva o especializada.',
+      items: [
       {
         icon: faHands,
         text: 'Eliminamos procesos manuales y reducimos el costo de operaciones.',
@@ -96,9 +110,10 @@ const siteContent: siteContent = {
     ],
   },
   aboutUs: {
-    title: '¿QUIÉNES SOMOS?',
-    contentP1: 'Somos una empresa de alto perfil tecnológico e innovador, formada por un grupo de profesionales de alta especializacion. Nuestra motivación es brindar apoyo a nuestros clientes ayudandolos a mejorar su gestion. Para aumentar la eficiencia de sus procesos e incrementando sus beneficios. Nuestro trabajo se caracteriza por el servicio personalizado y la garantia del trabajo realizado. ',
-    contentP2: 'Buscamos cumplir siempre con las expectativas de nuestros clientes en cada proyecto, por lo que proporcionamos un servicio con un alto sentido de responsabilidad y compromiso.'
+    title: '¿QUÉ NOS IMPULSA?',
+    contentP1: 'Somos una empresa de alto perfil tecnológico e innovador, formada por un grupo de profesionales de alta especializacion. ',
+    contentP2: 'Nuestra motivación es brindar apoyo a nuestros clientes mejorando su gestion y la eficiencia de sus procesos para incrementar sus beneficios. Nuestro trabajo se caracteriza por el servicio personalizado y la garantia del trabajo realizado. ',
+    contentP3: 'Buscamos cumplir siempre con las expectativas de nuestros clientes en cada proyecto proporcionando un servicio con un alto sentido de responsabilidad y compromiso.'
   },
   products: {
     title: 'NUESTROS PRODUCTOS',
@@ -182,11 +197,23 @@ const siteContent: siteContent = {
     "puntos-de-pago": {
     },
   },
-  ourClients:{
-    title: 'NUESTOS CLIENTES',
-    items: []
+  contact: {
+    title: 'CONTACTO',
+    adress: {
+      icon: faLocationDot, place: 'Calle José Andrés Aybar Castellanos No. 87 APT 3-B. ', location: 'La Esperilla. Santo Domingo, República Dominicana.'
+    },
+    phone: { icon: faPhone, number: '(809) 231-6879' },
+    email: { icon: faEnvelope, text: 'info@mts.com.do' },
+  },
+  promise: {
+    title: 'UNA EXPERIENCIA',
+    titleTag: ['ÁGIL', 'SIMPLE', 'SEGURA', 'COMPLETA'],
+    contentP1: 'Nos comprometemos a brindarle un servicio altamente atento y disponible, adaptando nustros servicio a sus necesidades y presupuesto. ',
+    contentP2: 'Nuestra motivación es brindar apoyo a nuestros clientes y ayudarlos a mejorar su gestión, haciendo más eficientes sus procesos e incrementando los beneficios obtenidos.'
+  },
+  footer: {
+    copyRight: `© ${(new Date()).getFullYear()} Argento, Todos los derechos reservados.`
   }
-
 };
 
 export default siteContent

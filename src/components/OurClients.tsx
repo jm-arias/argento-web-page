@@ -14,7 +14,7 @@ export default function OurClients() {
             <hr className="h-[10rem] border-0 bg-blue-accent pr-[1px] hidden lg:inline" />
             <div className="flex flex-wrap justify-center gap-4">
               {images.ClientLogos.map(_ => (
-                <img src={_} className="w-28 shadow-[0_0px_10px_0px_rgba(63,126,186,0.3)] rounded-2"/>
+                <img key={_} src={_} className="w-28 shadow-[0_0px_10px_0px_rgba(63,126,186,0.3)] rounded-2"/>
               ))}
             </div>
         </div>
