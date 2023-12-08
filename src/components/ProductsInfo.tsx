@@ -6,30 +6,31 @@ import ContentContainer from "components/frames/ContentContainer";
 import Heading from "components/ui/Heading";
 import { Products, identityColor } from "const/generals";
 
-
-
 export default function ProductsInfo() {
   const [product, setProduct] = useState<Products>("bancaseguros");
 
   const getProductTheme = (): identityColor => {
     switch (product) {
       case "bancaseguros":
-        return "blue-primary";
+        return "blue";
       case "subagentes":
-        return "orange-primary";
+        return "orange";
       case "puntos-de-pago":
-        return "purple-primary";
+        return "purple";
     }
   };
 
-  const isActive = (p: Products) => (p === product ? `border-b-(solid 5 ${getProductTheme()})` : "saturate-0");
+  const isActive = (p: Products) =>
+    p === product
+      ? `border-b-(solid 1) border-${getProductTheme()}-primary`
+      : "saturate-0";
 
   return (
     <div className="py-25 bg-cover grid place-content-center overflow-hidden bg-gradient-to-t from-gray-200 to-white relative">
       <ContentContainer className="relative z-1">
         <div className="grid gap-12 lg:gap-15 ">
           <div className="grid gap-5 text-center">
-            <Heading className={`text-${getProductTheme()}`}>
+            <Heading className={`text-${getProductTheme()}-primary`}>
               {siteContent.products.title}
             </Heading>
             <div className="grid grid-cols-3 gap-5vw lg:gap-20 mx-2vh lg:mx-30 md:mx-15vh py-2vw lg:py-5">
@@ -40,12 +41,16 @@ export default function ProductsInfo() {
               />
               <img
                 src={images.ArgentoBancaseguros}
-                className={["w-full", "py-4", isActive("bancaseguros")].join(" ")}
+                className={["w-full", "py-4", isActive("bancaseguros")].join(
+                  " "
+                )}
                 onClick={() => setProduct("bancaseguros")}
               />
               <img
                 src={images.ArgentoPuntosDePago}
-                className={["w-full", "py-4", isActive("puntos-de-pago")].join(" ")}
+                className={["w-full", "py-4", isActive("puntos-de-pago")].join(
+                  " "
+                )}
                 onClick={() => setProduct("puntos-de-pago")}
               />
             </div>
@@ -75,22 +80,44 @@ export default function ProductsInfo() {
               ))}
             </div>
           </div>
-          {siteContent.products[product]?.footer && <div className="flex flex-wrap justify-center gap-5">
-            <hr className={["border-0", "h-[1px]", `bg-${getProductTheme()}`, "w-full", "m-0"].join(" ")} />
-            <div className={["text-(center lg)", "w-full", `text-${getProductTheme()}`].join(" ")}>
-              {siteContent.products[product]?.footer?.content}
+          {siteContent.products[product]?.footer && (
+            <div className="flex flex-wrap justify-center gap-5">
+              <hr
+                className={[
+                  "border-0",
+                  "h-[1px]",
+                  `bg-${getProductTheme()}-accent`,
+                  "w-full",
+                  "m-0",
+                ].join(" ")}
+              />
+              <div
+                className={[
+                  "text-(center lg)",
+                  "w-full",
+                  `text-${getProductTheme()}-primary`,
+                ].join(" ")}
+              >
+                {siteContent.products[product]?.footer?.content}
+              </div>
+              <div className="w-full flex flex-wrap gap-2 w-[80%] lg:w-[60%] justify-center">
+                {siteContent.products[product]?.footer?.products.map((_) => (
+                  <span
+                    className={[
+                      "text-(white sm)",
+                      `bg-${getProductTheme()}-primary`,
+                      "px-2.5",
+                      "py-0.5",
+                      "rounded-md",
+                    ].join(" ")}
+                    key={_}
+                  >
+                    {_}
+                  </span>
+                ))}
+              </div>
             </div>
-            <div className="w-full flex flex-wrap gap-2 w-[80%] lg:w-[60%] justify-center">
-              {siteContent.products[product]?.footer?.products.map((_) => (
-                <span
-                  className={["text-(white sm)", `bg-${getProductTheme()}`, "px-2.5", "py-0.5", "rounded-md"].join(" ")}
-                  key={_}
-                >
-                  {_}
-                </span>
-              ))}
-            </div>
-          </div>}
+          )}
         </div>
       </ContentContainer>
       <div className="absolute w-full h-full blur-sm drop-shadow-lg opacity-8 lg:opacity-30">

@@ -1,18 +1,20 @@
-import siteContent from "const/siteContent";
 import ContentContainer from "components/frames/ContentContainer";
 import { images } from "assets/index";
 
 export default function OurClients() {
   return (
-    <div className="p-40" style={{
-      backgroundImage: images.AbstracWhiteBg,
+    <div className="py-25 grid place-content-center bg-center-center" style={{
+      backgroundImage: `url(${images.AbstracWhiteBg})`,
     }}>
       <ContentContainer>
-        <div className="flex">
-            <div className="text-6xl font-900">NUESTROS CLIENTES</div>
-            <div className="grid grid-flow-col">
-              {siteContent.ourClients.items.map(_ => (
-                <img src={_} className="aspect-[4/2] w-100"/>
+        <div className="grid lg:flex items-center justify-between lg:gap-15 gap-10">
+            <span className="lg:text-left text-center lg:text-7xl text-[10vw] sm:text-[5vw] leading-[1em] font-900  from-blue-secondary via-blue-primary to-blue-accent bg-gradient-to-r bg-clip-text text-transparent">
+              NUESTROS<br className="hidden lg:inline"/> CLIENTES
+            </span>
+            <hr className="h-[10rem] border-0 bg-blue-accent pr-[1px] hidden lg:inline" />
+            <div className="flex flex-wrap justify-center gap-4">
+              {images.ClientLogos.map(_ => (
+                <img src={_} className="w-28 shadow-[0_0px_10px_0px_rgba(63,126,186,0.3)] rounded-2"/>
               ))}
             </div>
         </div>
