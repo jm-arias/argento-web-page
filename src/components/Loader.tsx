@@ -18,7 +18,7 @@ export default function Loader() {
     >
       <div className="flex items-center justify-center w-full h-full relative">
         <div className="text-center">
-          <img src={images.Spiner} />
+          <img src={images.spiner} />
           <Heading className="text-blue-primary">
             {siteContent.promise.title}
             <div className="text-[0.6em] font-800 leading-[1em] lg:text-[1.6rem] md:text-[2.5vw]">
@@ -33,7 +33,7 @@ export default function Loader() {
             </div>
           </Heading>
         </div>
-        <img src={images.ArgentoLogo} className="absolute w-50 bottom-5" />
+        <img src={images.argentoLogo} className="absolute w-50 bottom-5" />
       </div>
     </div>
   );

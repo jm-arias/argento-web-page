@@ -6,13 +6,13 @@ import siteContent from "const/siteContent";
 export default function Promise() {
   return (
     <div
-      className="py-25 grid place-content-center bg-bottom-center"
+      className="py-25 flex justify-center bg-bottom-center"
       style={{
-        backgroundImage: `url(${images.AbstractBuildingBg02})`,
+        backgroundImage: `url(${images.abstractBuildingBg02})`,
       }}
     >
       <ContentContainer>
-        <div className="grid gap-4 md:w-[75%] text-center md:text-left ">
+        <div className="grid gap-4 md:w-[70%] text-center md:text-left ">
             <Heading className="text-blue-primary">
               {siteContent.promise.title}
               <div className="text-[0.6em] font-800 leading-[1em] lg:text-[1.6rem] md:text-[2.5vw]">

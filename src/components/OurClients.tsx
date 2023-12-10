@@ -3,8 +3,8 @@ import { images } from "assets/index";
 
 export default function OurClients() {
   return (
-    <div className="py-25 grid place-content-center bg-center-center" style={{
-      backgroundImage: `url(${images.AbstracWhiteBg})`,
+    <div className="py-25 flex justify-center bg-center-center" style={{
+      backgroundImage: `url(${images.abstracWhiteBg})`,
     }}>
       <ContentContainer>
         <div className="grid lg:flex items-center justify-between lg:gap-15 gap-10">
@@ -13,7 +13,7 @@ export default function OurClients() {
             </span>
             <hr className="h-[10rem] border-0 bg-blue-accent pr-[1px] hidden lg:inline" />
             <div className="flex flex-wrap justify-center gap-4">
-              {images.ClientLogos.map(_ => (
+              {images.clientLogos.map(_ => (
                 <img key={_} src={_} className="w-28 shadow-[0_0px_10px_0px_rgba(63,126,186,0.3)] rounded-2"/>
               ))}
             </div>

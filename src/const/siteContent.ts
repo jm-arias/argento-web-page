@@ -152,7 +152,7 @@ const siteContent: siteContent = {
           icon: faPieChart,
         },
       ],
-      sectionImage: `url("${images.HandsomeYoungBusinessManWorkingWithComputerOffice}")`,
+      sectionImage: `url("${images.handsomeYoungBusinessManWorkingWithComputerOffice}")`,
       footer: {
         content: 'Completamente preparado para la planificación, organización, direción y control de una amplia gama de productos del sector de BANCASEGUROS.',
         products: [

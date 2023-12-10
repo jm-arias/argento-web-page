@@ -15,7 +15,7 @@ export default function ArgentoElement() {
       </div>
       <div>
         <div className="text-center">
-          <img src={images.LogoWhite} className="w-[75%]" />
+          <img src={images.logoWhite} className="w-[75%]" />
         </div>
         <hr className="my-4 w-full" />
         <div className="text-center text-xs">

@@ -5,8 +5,12 @@ import Heading from "components/ui/Heading";
 
 export default function HeaderNav() {
   return (
-    <div className="heroContainer grid place-content-center bg-cover bg-fixed bg-top-left -mb-[12vw] md:-mb-[15vw]
-    xl:-mb-[13em]">
+    <div 
+    className="flex justify-center bg-cover bg-fixed bg-top-left -mb-[12vw] md:-mb-[15vw]
+    xl:-mb-[13em]"
+    style={{
+      backgroundImage: `url(${images.abstractBuildingBg})`,
+    }}>
       <ContentContainer>
         <div className="grid grid-cols-1 my-30 md:grid-cols-2 md:my-20 md:gap-10">
           <div className="flex items-center">
@@ -17,11 +21,15 @@ export default function HeaderNav() {
               <p className="hidden lg-inline">{siteContent.hero.content}</p>
             </div>
           </div>
-          <div className="relative items-center justify-center overflow-visible hidden md:flex z-1">
-            <div className="graph-filters absolute aspect-square w-full object-contain backdrop-blur-md"></div>
+          <div className="relative items-center justify-center overflow-visible hidden md:flex z-1 ">
+            <div 
+            className="absolute aspect-square w-full backdrop-blur-md rounded-full"
+
+            ></div>
             <img
-              className="graph aspect-square w-full object-contain"
-              src={images.AddedValueGraph}
+              className="aspect-square w-full relative"
+              src={images.addedValueGraph}
+              style={{filter: 'drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.3))'}}
             />
           </div>
         </div>

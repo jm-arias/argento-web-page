@@ -6,12 +6,18 @@ import Heading from "components/ui/Heading";
 
 export default function AddedValue() {
   return (
-    <div className="addedValueheroContainer bg-cover grid place-content-center bg-right-top pb-25 pt-30 lg:pt-50 sm:pt-40">
+    <div
+      className="bg-cover flex justify-center bg-right-top pb-25 pt-30 lg:pt-50 sm:pt-40"
+      style={{
+        backgroundImage: `url(${images.whiteDiagonalClipedBg})`,
+        filter: "drop-shadow(0px -20px 10px rgba(128, 128, 128, 0.2))",
+      }}
+    >
       <ContentContainer>
         <div className="grid gap-10">
           <div className="flex items-center justify-center gap-10">
             <img
-              src={images.ArgentoCoin}
+              src={images.argentoCoin}
               className="hidden h-35 md:inline drop-shadow-md"
             />
             <div className="text-center md:text-left">
@@ -20,7 +26,9 @@ export default function AddedValue() {
               </Heading>
               <div className="text-md py-2">
                 <span>{siteContent.addedValue.contentP1}</span>
-                <span className="hidden md:inline">{siteContent.addedValue.contentP2}</span>
+                <span className="hidden md:inline">
+                  {siteContent.addedValue.contentP2}
+                </span>
               </div>
             </div>
           </div>

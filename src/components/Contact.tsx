@@ -9,7 +9,7 @@ export default function Contact() {
       <div
         className="md:py-25 py-15 px-5 md:px-25 grid gap-5 md:gap-8 md:w-150 bg-center-center text-white flex-wrap justify-center"
         style={{
-          backgroundImage: `url(${images.AbstractBlueBg02})`,
+          backgroundImage: `url(${images.abstractBlueBg02})`,
         }}
       >
         <span className="lg:text-left text-center lg:text-5xl text-[7vw] sm:text-[5vw] leading-[1em] font-900">

@@ -38,19 +38,19 @@ export default function ProductsInfo() {
             </Heading>
             <div className="grid grid-cols-3 gap-5vw lg:gap-20 mx-2vh lg:mx-30 md:mx-15vh py-2vw lg:py-5">
               <img
-                src={images.ArgentoSubagentes}
+                src={images.argentoSubagentes}
                 className={["w-full", "py-4", isActive("subagentes")].join(" ")}
                 onClick={() => setProduct("subagentes")}
               />
               <img
-                src={images.ArgentoBancaseguros}
+                src={images.argentoBancaseguros}
                 className={["w-full", "py-4", isActive("bancaseguros")].join(
                   " "
                 )}
                 onClick={() => setProduct("bancaseguros")}
               />
               <img
-                src={images.ArgentoPuntosDePago}
+                src={images.argentoPuntosDePago}
                 className={["w-full", "py-4", isActive("puntos-de-pago")].join(
                   " "
                 )}
@@ -109,8 +109,7 @@ export default function ProductsInfo() {
                     className={[
                       "text-(white sm)",
                       `bg-${getProductTheme()}-primary`,
-                      "px-2.5",
-                      "py-0.5",
+                      "px-2.5 py-0.5",
                       "rounded-md",
                     ].join(" ")}
                     key={_}
@@ -125,15 +124,15 @@ export default function ProductsInfo() {
       </ContentContainer>
       <div className="absolute w-full h-full blur-sm drop-shadow-lg opacity-8 lg:opacity-30">
         <img
-          src={images.SilverRing}
+          src={images.silverRing}
           className="absolute w-200 -left-100 top-20% "
         />
         <img
-          src={images.SilverRing}
+          src={images.silverRing}
           className="absolute w-150 -right-75 -top-75 "
         />
         <img
-          src={images.SilverRing}
+          src={images.silverRing}
           className="absolute w-100 -right-30 -bottom-50 "
         />
       </div>
