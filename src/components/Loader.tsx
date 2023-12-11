@@ -1,15 +1,12 @@
 import { images } from "assets/index";
 import Heading from "components/ui/Heading";
 import siteContent from "const/siteContent";
-import { useState } from "react";
+
 
 export default function Loader() {
-  const [display, setDisplay] = useState<"hidden" | "inline">("hidden");
-
-  document.onreadystatechange = () => {
-    document.readyState === "complete" && setDisplay("hidden");
-    document.readyState !== "complete" && setDisplay("inline");
-  };
+  function isLoading(){
+    return document.readyState !== "complete" ? "hidden" : "inline";
+  }
 
   return (
     <div
@@ -18,11 +15,11 @@ export default function Loader() {
         "fixed",
         "z-100",
         "bg-gradient-to-b from-cyan-100 to-blue-100",
-        display,
+        isLoading(),
       ].join(" ")}
     >
       <div className="flex items-center justify-center w-full h-full relative">
-        <div className="text-center">
+        <div className="text-center pb-25">
           <img src={images.spiner} />
           <Heading className="text-blue-primary">
             {siteContent.promise.title}
