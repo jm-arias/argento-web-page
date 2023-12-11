@@ -5,7 +5,7 @@ import siteContent from "const/siteContent";
 
 export default function Loader() {
   function isLoading(){
-    return document.readyState !== "complete" ? "hidden" : "inline";
+    return document.readyState === "complete" ? "hidden" : "inline";
   }
 
   return (
