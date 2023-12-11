@@ -4,8 +4,8 @@ import siteContent from "const/siteContent";
 
 
 export default function Loader() {
-  //const isLoading = () =>
-  //  document.readyState === "complete" ? "hidden" : "inline";
+  const isLoading = () =>
+    document.readyState === "complete" ? "hidden" : "inline";
 
 
   return (
@@ -15,7 +15,7 @@ export default function Loader() {
         "fixed",
         "z-100",
         "bg-gradient-to-b from-cyan-100 to-blue-100",
-        //isLoading(),
+        isLoading(),
       ].join(" ")}
     >
       <div className="flex items-center justify-center w-full h-full relative">
