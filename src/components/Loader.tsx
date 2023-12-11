@@ -1,12 +1,15 @@
 import { images } from "assets/index";
 import Heading from "components/ui/Heading";
 import siteContent from "const/siteContent";
-
+import { useState } from "react";
 
 export default function Loader() {
-  const isLoading = () =>
-    document.readyState === "complete" ? "hidden" : "inline";
+  const [display, setDisplay] = useState<"hidden" | "inline">("hidden");
 
+  document.onreadystatechange = () => {
+    document.readyState === "complete" && setDisplay("hidden");
+    document.readyState !== "complete" && setDisplay("inline");
+  };
 
   return (
     <div
@@ -15,7 +18,7 @@ export default function Loader() {
         "fixed",
         "z-100",
         "bg-gradient-to-b from-cyan-100 to-blue-100",
-        isLoading(),
+        display,
       ].join(" ")}
     >
       <div className="flex items-center justify-center w-full h-full relative">

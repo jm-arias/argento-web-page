@@ -128,18 +128,18 @@ export default function ProductsInfo() {
           )}
         </div>
       </ContentContainer>
-      <div className="absolute w-full h-full blur-sm drop-shadow-lg opacity-8 lg:opacity-30">
+      <div className="absolute w-full h-full  drop-shadow-lg opacity-8 lg:opacity-30">
         <img
           src={images.silverRing}
-          className="absolute w-200 -left-100 top-20% "
+          className="absolute w-200 -left-100 top-20%"
         />
         <img
           src={images.silverRing}
-          className="absolute w-150 -right-75 -top-75 "
+          className="absolute w-150 -right-75 -top-75"
         />
         <img
           src={images.silverRing}
-          className="absolute w-100 -right-30 -bottom-50 "
+          className="absolute w-100 -right-30 -bottom-50"
         />
       </div>
     </div>
