@@ -12,5 +12,6 @@ export default defineConfig({
       { find: "const", replacement: resolve(__dirname, "./src/const") },
       { find: "components", replacement: resolve(__dirname, "./src/components") }
     ],
-  }
+  },
+  base: '/argento-web-page/'
 })

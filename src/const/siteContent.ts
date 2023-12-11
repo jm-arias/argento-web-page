@@ -44,7 +44,7 @@ type siteContent = {
   } & textContent,
   products: {
     title: string,
-  } & Record<Products, {
+  } & Partial<Record<Products, {
     features?: ({
       title: string,
       content: string,
@@ -54,7 +54,7 @@ type siteContent = {
     footer?: {
       products: string[]
     } & textContent,
-  } & textContent>,
+  } & textContent>>,
   contact: {
     title: string,
     adress: { icon: IconDefinition, place: string, location: string },
@@ -168,7 +168,7 @@ const siteContent: siteContent = {
       },
     },
     "subagentes": {
-      contentP1: 'Argento Finanzas es una solución de corresponsalía bancaria que permite negocios o comercios, que mantenga contacto cotidiano con el público, aprovechar su infraestructura física y recursos humanos de manera que estos puedan funcionar directamente como representante comercial del banco. ',
+      contentP1: 'Argento Subagentes es una solución de corresponsalía bancaria que permite negocios o comercios, que mantenga contacto cotidiano con el público, aprovechar su infraestructura física y recursos humanos de manera que estos puedan funcionar directamente como representante comercial del banco. ',
       contentP2: 'De esta forma, permite que se ofrecezcan en nombre de la organización los servicios financieros básicos al público en general.',
       features: [
         {
@@ -194,8 +194,8 @@ const siteContent: siteContent = {
       ],
       sectionImage: `url("${images.groupPeopleWorkingOutBusinessPlanOffice}")`,
     },
-    "puntos-de-pago": {
-    },
+   /*  "puntos-de-pago": {
+    }, */
   },
   contact: {
     title: 'CONTACTO',

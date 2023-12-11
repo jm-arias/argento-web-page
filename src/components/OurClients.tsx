@@ -3,7 +3,7 @@ import { images } from "assets/index";
 
 export default function OurClients() {
   return (
-    <div className="py-25 flex justify-center bg-center-center" style={{
+    <div className="py-25 flex justify-center bg-center-center bg-cover" style={{
       backgroundImage: `url(${images.abstracWhiteBg})`,
     }}>
       <ContentContainer>

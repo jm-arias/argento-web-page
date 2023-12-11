@@ -6,7 +6,7 @@ import siteContent from "const/siteContent";
 export default function Promise() {
   return (
     <div
-      className="py-25 flex justify-center bg-bottom-center"
+      className="py-25 flex justify-center bg-bottom-center bg-cover"
       style={{
         backgroundImage: `url(${images.abstractBuildingBg02})`,
       }}

@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <div id={anchorMenu.contact.anchor} className="md:flex">
       <div
-        className="md:py-25 py-15 px-5 md:px-25 grid gap-5 md:gap-8 md:w-150 bg-center-center text-white flex-wrap justify-center"
+        className="md:py-25 py-15 px-5 md:px-25 grid gap-5 md:gap-8 md:w-150 bg-center-center bg-cover text-white flex-wrap justify-center"
         style={{
           backgroundImage: `url(${images.abstractBlueBg02})`,
         }}
