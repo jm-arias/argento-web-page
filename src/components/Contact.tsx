@@ -53,6 +53,7 @@ export default function Contact() {
           <iframe
             width="100%"
             height="100%"
+            className="border-0"
             src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Calle%20Jos%C3%A9%20Andr%C3%A9s%20Aybar%20Castellanos%20No.%2087%20+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           ></iframe>
         </div>
