@@ -112,8 +112,8 @@ const siteContent: siteContent = {
   aboutUs: {
     title: '¿QUÉ NOS IMPULSA?',
     contentP1: 'Somos una empresa de alto perfil tecnológico e innovador, formada por un grupo de profesionales de alta especializacion. ',
-    contentP2: 'Nuestra motivación es brindar apoyo a nuestros clientes mejorando su gestion y la eficiencia de sus procesos para incrementar sus beneficios. Nuestro trabajo se caracteriza por el servicio personalizado y la garantia del trabajo realizado. ',
-    contentP3: 'Buscamos cumplir siempre con las expectativas de nuestros clientes en cada proyecto proporcionando un servicio con un alto sentido de responsabilidad y compromiso.'
+    contentP2: 'Nuestra motivación es brindar apoyo a nuestros clientes para mejorar su gestion y la eficiencia de sus procesos, con el objetivo de incrementar sus beneficios. Nuestro trabajo se caracteriza por el servicio personalizado y la garantia del trabajo realizado. ',
+    contentP3: 'Buscamos cumplir siempre con las expectativas de nuestros clientes en cada proyecto, proporcionando un servicio con un alto sentido de responsabilidad y compromiso.'
   },
   products: {
     title: 'NUESTROS PRODUCTOS',
