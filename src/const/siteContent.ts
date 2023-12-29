@@ -24,51 +24,7 @@ import {
 import { images } from 'assets';
 import { Products } from 'const';
 
-type textContent = Partial<Record<'content' | `contentP${number}`, string>>
-type imgUrl = `url("${string}")`
 
-type siteContent = {
-  hero: {
-    title: string,
-  } & textContent,
-  addedValue: {
-    title: string,
-    items:
-    {
-      icon: IconDefinition,
-      text: string,
-    }[],
-  } & textContent,
-  aboutUs: {
-    title: string,
-  } & textContent,
-  products: {
-    title: string,
-  } & Partial<Record<Products, {
-    features?: ({
-      title: string,
-      content: string,
-      icon: IconDefinition,
-    })[],
-    sectionImage?: imgUrl,
-    footer?: {
-      products: string[]
-    } & textContent,
-  } & textContent>>,
-  contact: {
-    title: string,
-    adress: { icon: IconDefinition, place: string, location: string },
-    phone: { icon: IconDefinition, number: `(${number}) ${number}-${number}` },
-    email: { icon: IconDefinition, text: `${string}@${string}` },
-  }
-  promise: {
-    title: string;
-    titleTag: string[]
-  } & textContent,
-  footer: {
-    copyRight: string
-  }
-};
 
 const siteContent: siteContent = {
   hero: {
@@ -216,4 +172,49 @@ const siteContent: siteContent = {
   }
 };
 
+type textContent = Partial<Record<'content' | `contentP${number}`, string>>
+type imgUrl = `url("${string}")`
+
+type siteContent = {
+  hero: {
+    title: string,
+  } & textContent,
+  addedValue: {
+    title: string,
+    items:
+    {
+      icon: IconDefinition,
+      text: string,
+    }[],
+  } & textContent,
+  aboutUs: {
+    title: string,
+  } & textContent,
+  products: {
+    title: string,
+  } & Partial<Record<Products, {
+    features?: ({
+      title: string,
+      content: string,
+      icon: IconDefinition,
+    })[],
+    sectionImage?: imgUrl,
+    footer?: {
+      products: string[]
+    } & textContent,
+  } & textContent>>,
+  contact: {
+    title: string,
+    adress: { icon: IconDefinition, place: string, location: string },
+    phone: { icon: IconDefinition, number: `(${number}) ${number}-${number}` },
+    email: { icon: IconDefinition, text: `${string}@${string}` },
+  }
+  promise: {
+    title: string;
+    titleTag: string[]
+  } & textContent,
+  footer: {
+    copyRight: string
+  }
+};
 export default siteContent

@@ -8,13 +8,13 @@ import OurClients from "components/OurClients";
 import Contact from "components/Contact";
 import Promise from "components/Promise";
 import Footer from "components/Footer";
-import Loader from "components/Loader"; 
+// import Loader from "components/Loader"; 
 
 export default function App() {
 
   return (
     <div className="font-(500 sans) text-dark">
-      <Loader/>
+      {/* <Loader/> */}
       <HeaderNav />
       <Hero />
       <AddedValue />

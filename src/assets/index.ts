@@ -12,13 +12,19 @@ import blueAbstracBg from "assets/img/blue-abstract-bg.jpg";
 import favicon from "assets/img/favicon.svg";
 import groupPeopleWorkingOutBusinessPlanOffice from "assets/img/group-people-working-out-business-plan-office.jpg";
 import handsomeYoungBusinessManWorkingWithComputerOffice from "assets/img/handsome-young-business-man-working-with-computer-office.jpg";
-import logo01 from "assets/img/clientsLogos/logo_01.jpg";
-import logo02 from "assets/img/clientsLogos/logo_02.jpg";
-import logo03 from "assets/img/clientsLogos/logo_03.jpg";
-import logo04 from "assets/img/clientsLogos/logo_04.jpg";
-import logo05 from "assets/img/clientsLogos/logo_05.jpg";
-import logo06 from "assets/img/clientsLogos/logo_06.jpg";
-import logo07 from "assets/img/clientsLogos/logo_07.jpg";
+import coopaspire from "assets/img/clientsLogos/logo_coopaspire.jpg";
+import coopbadom from "assets/img/clientsLogos/logo_coopbadom.jpg";
+import coopbeneficios from "assets/img/clientsLogos/logo_coopbeneficios.jpg";
+import coopeclof from "assets/img/clientsLogos/logo_coopeclof.jpg";
+import coophillary from "assets/img/clientsLogos/logo_coophillary.jpg";
+import coopideal from "assets/img/clientsLogos/logo_coopideal.jpg";
+import coopmoderna from "assets/img/clientsLogos/logo_coopmoderna.jpg";
+import coopOriental from "assets/img/clientsLogos/logo_coopOriental.jpg";
+import coopseguros from "assets/img/clientsLogos/logo_coopseguros.jpg";
+import cooptucrecer from "assets/img/clientsLogos/logo_cooptucrecer.jpg";
+import manosSolidarias from "assets/img/clientsLogos/logo_manosSolidarias.jpg";
+import mapfreSalud from "assets/img/clientsLogos/logo_mapfreSalud.jpg";
+import sanjose from "assets/img/clientsLogos/logo_sanjose.jpg";
 import logoWhite from "assets/img/logo-white.svg";
 import silverChunk from "assets/img/silver-chunk.png";
 import silverRing from "assets/img/silver-ring.png";
@@ -39,7 +45,21 @@ export const images = {
   argentoPuntosDePago,
   argentoSubagentes,
   blueAbstracBg,
-  clientLogos: [logo01, logo02, logo03, logo04, logo05, logo06, logo07],
+  clientLogos: [
+    coopaspire,
+    coopbadom,
+    coopbeneficios,
+    coopeclof,
+    coophillary,
+    coopideal,
+    coopmoderna,
+    coopOriental,
+    coopseguros,
+    cooptucrecer,
+    manosSolidarias,
+    cooptucrecer,
+    mapfreSalud,
+    sanjose,],
   favicon,
   groupPeopleWorkingOutBusinessPlanOffice,
   handsomeYoungBusinessManWorkingWithComputerOffice,

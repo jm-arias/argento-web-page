@@ -7,11 +7,11 @@ export default function OurClients() {
       backgroundImage: `url(${images.abstracWhiteBg})`,
     }}>
       <ContentContainer>
-        <div className="grid lg:flex items-center justify-between lg:gap-15 gap-10">
-            <span className="lg:text-left text-center lg:text-7xl text-[10vw] sm:text-[5vw] leading-[1em] font-900  from-blue-secondary via-blue-primary to-blue-accent bg-gradient-to-r bg-clip-text text-transparent">
-              NUESTROS<br className="hidden lg:inline"/> CLIENTES
+        <div className="grid xl:flex items-center justify-between xl:gap-15 gap-10">
+            <span className="xl:text-left text-center xl:text-7xl text-[10vw] sm:text-[5vw] leading-[1em] font-900  from-blue-secondary via-blue-primary to-blue-accent bg-gradient-to-r bg-clip-text text-transparent">
+              NUESTROS<br className="hidden xl:inline"/> CLIENTES
             </span>
-            <hr className="h-[10rem] border-0 bg-blue-accent pr-[1px] hidden lg:inline" />
+            <hr className="h-[10rem] border-0 bg-blue-accent pr-[1px] hidden xl:inline" />
             <div className="flex flex-wrap justify-center gap-4">
               {images.clientLogos.map(_ => (
                 <img key={_} src={_} className="w-28 shadow-[0_0px_10px_0px_rgba(63,126,186,0.3)] rounded-2"/>
