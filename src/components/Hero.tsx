@@ -29,7 +29,7 @@ export default function HeaderNav() {
             <img
               className="aspect-square w-full relative "
               src={images.addedValueGraph}
-              style={{filter: "drop-shadow(0px 20px 10px rgba(0,48,119,0.3))"}}
+              style={{filter: "drop-shadow(0px 20px 10px rgba(0,48,119,0.2))"}}
             />
           </div>
         </div>

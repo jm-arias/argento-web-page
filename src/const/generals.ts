@@ -1,13 +1,13 @@
 export const anchorMenu = {
   aboutUs: { 
-    text: "¿Quiénes somos?",
+    text: "NOSTROS",
     anchor: "aboutUs" },
   products: {
-    text: "Productos",
+    text: "PRODUCTOS",
     anchor: "productInfo"
   },
   contact: {
-    text: "Contácto",
+    text: "CONTÁCTO",
     anchor: "contact"
   },
 } as const;
