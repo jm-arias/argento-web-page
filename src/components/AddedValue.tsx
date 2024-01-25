@@ -10,7 +10,7 @@ export default function AddedValue() {
       className="bg-cover flex justify-center bg-right-top pb-25 pt-30 lg:pt-50 sm:pt-40"
       style={{
         backgroundImage: `url(${images.whiteDiagonalClipedBg})`,
-        filter: "drop-shadow(0px -20px 10px rgba(0,48,119,0.1))",
+        filter: "drop-shadow(0px -20px 10px rgba(0,48,119,0.05))",
       }}
     >
       <ContentContainer>

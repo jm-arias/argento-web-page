@@ -15,7 +15,7 @@ export default function Promise() {
         <div className="grid gap-4 md:w-[70%] text-center md:text-left ">
             <Heading className="text-blue-primary">
               {siteContent.promise.title}
-              <div className="text-[0.6em] font-800 leading-[1em] lg:text-[1.6rem] md:text-[2.5vw]">
+              <div className="text-[0.6em] font-800 lg:text-[1.6rem] md:text-[2.5vw]">
                 {siteContent.promise.titleTag.map((_, i) => (
                   <span key={_}>
                     {i ? (

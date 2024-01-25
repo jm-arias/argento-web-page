@@ -39,7 +39,7 @@ export default function ProductsInfo() {
         optionsToRender.push(
           <img
             src={_.img}
-            className={["w-30%", "py-4", isActive(_.option)].join(" ")}
+            className={["w-40% md:w-30%", "py-4", isActive(_.option)].join(" ")}
             onClick={() => setProduct(_.option)}
           />
         );
@@ -57,11 +57,14 @@ export default function ProductsInfo() {
       <ContentContainer className="relative z-1">
         <div className="grid gap-12 lg:gap-15 ">
           <div className="grid gap-5 text-center">
-            <Heading className={`text-${getProductTheme()}-primary`}>
-              {siteContent.products.title}
-            </Heading>
-            <div className="flex justify-center gap-5vw lg:gap-20 mx-2vh lg:mx-30 md:mx-15vh py-2vw lg:py-5">
-              {...getProductOptions()}
+            <div className="grid gap-2">
+
+              <Heading className={`text-${getProductTheme()}-primary`}>
+                {siteContent.products.title}
+              </Heading>
+              <div className="flex justify-center gap-5vw lg:gap-10 mx-2vh lg:mx-30 md:mx-15vh py-2vw lg:py-5">
+                {...getProductOptions()}
+              </div>
             </div>
             <div className="font-300">
               <span>{siteContent.products[product]?.contentP1}</span>
@@ -128,10 +131,10 @@ export default function ProductsInfo() {
           )}
         </div>
       </ContentContainer>
-      <div className="absolute w-full h-full  drop-shadow-lg opacity-8 lg:opacity-30">
+      <div className="absolute w-full h-full  drop-shadow-lg opacity-0 lg:opacity-20">
         <img
           src={images.silverRing}
-          className="absolute w-200 -left-100 top-20%"
+          className="absolute w-180 -left-100 top-20%"
         />
         <img
           src={images.silverRing}

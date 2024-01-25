@@ -29,9 +29,9 @@ import { Products } from 'const';
 const siteContent: siteContent = {
   hero: {
     title:
-      'UNA GESTIÓN DE NEGOCIOS ÁGIL Y EFICIENTE PARA TODO EL UNIVERSO DE SEGUROS',
+      'AUTOMATIZANDO PROCESOS EN EL MERCADO FINANCIERO Y DE SEGUROS',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae pretium turpis. Suspendisse vehicula congue turpis, et lobortis nulla auctor sodales. Ut in purus ac justo tempus condimentum. ',
+      'Tecnología sofisticada, eficaz e intuitiva que responde a problemas complejos en un ambiente de alto crecimiento, demandante y competitivo.',
   },
   addedValue: {
     title: 'UNA PROPUESTA DIGITAL ROBUSTA',
@@ -159,7 +159,7 @@ const siteContent: siteContent = {
       icon: faLocationDot, place: 'Calle José Andrés Aybar Castellanos No. 87 APT 3-B. ', location: 'La Esperilla. Santo Domingo, República Dominicana.'
     },
     phone: { icon: faPhone, number: '(809) 231-6879' },
-    email: { icon: faEnvelope, text: 'info@mts.com.do' },
+    email: { icon: faEnvelope, text: 'admin@argento.do' },
   },
   promise: {
     title: 'UNA EXPERIENCIA',
