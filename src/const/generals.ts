@@ -7,7 +7,7 @@ export const anchorMenu = {
     anchor: "productInfo"
   },
   contact: {
-    text: "CONTÁCTO",
+    text: "CONTACTO",
     anchor: "contact"
   },
 } as const;
