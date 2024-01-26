@@ -159,7 +159,7 @@ const siteContent: siteContent = {
       icon: faLocationDot, place: 'Calle José Andrés Aybar Castellanos No. 87 APT 3-B. ', location: 'La Esperilla. Santo Domingo, República Dominicana.'
     },
     phone: { icon: faPhone, number: '(809) 231-6879' },
-    email: { icon: faEnvelope, text: 'admin@argento.do' },
+    email: { icon: faEnvelope, text: 'mendezmi@argento.do' },
   },
   promise: {
     title: 'UNA EXPERIENCIA',

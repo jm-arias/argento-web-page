@@ -9,7 +9,7 @@ export default function ArgentoElement() {
           <div>Años</div>
         </div>
         <div className="text-right">
-          <div className="text-2xl font-800">150+</div>
+          <div className="text-2xl font-800">50+</div>
           <div>Clientes</div>
         </div>
       </div>
