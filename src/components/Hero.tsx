@@ -6,7 +6,7 @@ import Heading from "components/ui/Heading";
 export default function HeaderNav() {
   return (
     <div 
-    className="flex justify-center bg-cover bg-fixed bg-top-left -mb-[12vw] md:-mb-[15vw]
+    className="flex justify-center bg-cover bg-fixed bg-top-center -mb-[12vw] md:-mb-[15vw]
     xl:-mb-[13em]"
     style={{
       backgroundImage: `url(${images.abstractBuildingBg})`,

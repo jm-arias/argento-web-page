@@ -1,6 +1,6 @@
 export const anchorMenu = {
   aboutUs: { 
-    text: "NOSTROS",
+    text: "NOSOTROS",
     anchor: "aboutUs" },
   products: {
     text: "PRODUCTOS",
